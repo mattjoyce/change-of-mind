@@ -1,0 +1,49 @@
+models:
+  # Local/Private Models
+  - name: "LLaMA 3.1 8B (local)"
+    cost_rank: 0.05
+    quality_rank: 0.55
+    privacy_rank: 1.0
+    speed_rank: 0.9
+    class_tags: "local coding sysadmin lightweight"
+    endpoint: "ollama://llama3.1:8b"
+    context_window: 8192
+
+  # Mid-tier Reasoning Models
+  - name: "DeepSeek R1"
+    cost_rank: 0.4
+    quality_rank: 0.9
+    privacy_rank: 0.9
+    speed_rank: 0.5
+    class_tags: "reasoning coding math logic"
+    endpoint: "https://api.deepseek.com/v1"
+    context_window: 32768
+
+  # Premium Cloud Models
+  - name: "Claude Sonnet 4.5"
+    cost_rank: 0.65
+    quality_rank: 0.95
+    privacy_rank: 0.3
+    speed_rank: 0.7
+    class_tags: "reasoning creative long_context research"
+    endpoint: "https://api.anthropic.com/v1"
+    context_window: 200000
+
+  - name: "GPT-4o"
+    cost_rank: 0.7
+    quality_rank: 0.92
+    privacy_rank: 0.25
+    speed_rank: 0.8
+    class_tags: "creative reasoning coding multimodal"
+    endpoint: "https://api.openai.com/v1"
+    context_window: 128000
+
+  # Budget-Friendly Cloud
+  - name: "Gemini 1.5 Flash"
+    cost_rank: 0.2
+    quality_rank: 0.7
+    privacy_rank: 0.3
+    speed_rank: 0.95
+    class_tags: "coding sysadmin creative"
+    endpoint: "https://api.google.com/v1"
+    context_window: 1000000

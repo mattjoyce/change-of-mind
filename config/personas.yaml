@@ -1,0 +1,77 @@
+personas:
+  - name: "SysAdmin"
+    preference_quality: 0.6
+    preference_cost: 0.8
+    preference_privacy: 0.9
+    preference_speed: 0.7
+    preference_creativity: 0.2
+    stance: "conservative"
+    escalation_policy: "auto"
+    risk_tolerance: "low"
+    preferred_task_types:
+      - "sysadmin"
+      - "coding"
+      - "config_generation"
+      - "log_analysis"
+    boosts:
+      local: 0.20
+      sysadmin: 0.15
+      coding: 0.10
+
+  - name: "Researcher"
+    preference_quality: 0.95
+    preference_cost: 0.2
+    preference_privacy: 0.4
+    preference_speed: 0.3
+    preference_creativity: 0.5
+    stance: "balanced"
+    escalation_policy: "always"
+    risk_tolerance: "normal"
+    preferred_task_types:
+      - "research"
+      - "reasoning"
+      - "long_context"
+      - "analysis"
+    boosts:
+      reasoning: 0.20
+      long_context: 0.15
+      research: 0.10
+
+  - name: "Creative"
+    preference_quality: 0.7
+    preference_cost: 0.5
+    preference_privacy: 0.2
+    preference_speed: 0.6
+    preference_creativity: 0.9
+    stance: "experimental"
+    escalation_policy: "manual"
+    risk_tolerance: "high"
+    preferred_task_types:
+      - "creative"
+      - "brainstorming"
+      - "storytelling"
+    boosts:
+      creative: 0.25
+      multimodal: 0.10
+
+  - name: "General"
+    preference_quality: 0.7
+    preference_cost: 0.6
+    preference_privacy: 0.5
+    preference_speed: 0.5
+    preference_creativity: 0.5
+    stance: "balanced"
+    escalation_policy: "auto"
+    risk_tolerance: "normal"
+    preferred_task_types:
+      - "coding"
+      - "reasoning"
+      - "creative"
+      - "sysadmin"
+      - "research"
+      - "long_context"
+    boosts:
+      # Minimal boosts - let task matching do the heavy lifting
+      reasoning: 0.10
+      coding: 0.10
+      creative: 0.10
