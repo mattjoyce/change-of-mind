@@ -299,3 +299,6 @@ MIT License - see [LICENSE](LICENSE) file
 ## Documentation
 
 For the full specification and design details, see [change-of-mind.md](change-of-mind.md).
+
+## Changelog
+See [CHANGELOG.md](CHANGELOG.md).
